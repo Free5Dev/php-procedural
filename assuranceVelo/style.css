@@ -1,0 +1,521 @@
+
+body,html
+{
+	margin: 0px;
+}
+header
+{
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	background-color: #222222;
+}
+#logo
+{
+	display: flex;
+	align-items: center;
+}
+.logo
+{
+	width: 180px;
+	text-align: right;
+}
+nav 
+{
+	flex: 1;
+}
+nav ul
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav li
+{
+	list-style-type: none;
+}
+nav a
+{
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Trebuchet MS',Impact,serif;
+	font-size: 1.2em;
+}
+#numero
+{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #fff;
+	color: black;
+	margin-right: 15px;
+	border-radius: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+/*banniere*/
+#banniere
+{
+	width: 1500px;
+	background: url('images/1018.jpg') no-repeat center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 660px;
+	/*margin: auto*/
+}
+#banniere h1
+{
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 0px;
+	border-bottom: 1px solid #f75100;
+	font-size: 2.5em;
+	text-shadow: 3px 3px 3px black;
+}
+#banniere p
+{
+	font-size: 1.5em;
+	font-family: 'Trebuhet MS',serif;
+	margin-top: 0px;
+	color: #181818;
+}
+#button
+{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+#button button
+{
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	margin: 5px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+#button button:nth-child(1)
+{
+	background-color: #f75100;
+	color: #fff;
+	border:none;
+}
+#button button:nth-child(1):hover
+{
+	font-size: 1.8em;
+	width: 210px;
+	height: 100px;
+}
+#button button:nth-child(2)
+{
+	border:none;
+}
+#button button:nth-child(2):hover
+{
+	font-size: 1.8em;
+	width: 210px;
+	height: 100px;
+}
+/*section*/
+section
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#article
+{
+	display: flex;
+}
+#entete
+{
+	text-align: center;
+	margin-bottom: 15px;
+}
+#entete h1
+{
+	text-transform: uppercase;
+	letter-spacing: 1;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #181818;
+	margin-bottom: 0px;
+	text-align: center;
+}
+#entete p
+{
+	font-family: 'Trebuchet MS',serif;
+}
+#entete strong
+{
+	border-bottom:3px solid #f75100;
+}
+#classique,#electrique
+{
+	width: 400px;
+	border:3px ridge #F7F7F7;
+	margin-left:10px;
+	margin-right:10px;
+	text-align: center;
+	background-color: #F7F7F7;
+	color: #181818;
+	border-radius: 5px;
+}
+section h2
+{
+	font-family: Impact,serif;
+	font-weight: normal;
+}
+#classique,#electrique
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#classique hr,#electrique hr
+{
+	border-bottom: 3px solid #f75100;
+	width: 150px;
+	margin: auto;	
+}
+#classique p,#electrique p 
+{
+	font-family: 'Trebuhet MS',serif;
+	font-size: 1.3em;
+	text-align: center;
+}
+#classique .a,#electrique .a
+{
+	border:1px solid #f75100;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #f75100;
+	border-radius: 5px;
+}
+#classique a , #electrique a
+{
+	
+	color: #fff;
+	letter-spacing: 1;
+	text-decoration: none;
+}
+/*apropos*/
+#apropos 
+{
+	background-color: #9de7bf;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	margin-bottom: 80px;
+}
+#apropos #gauche
+{
+	border:1px ridge #9de7bf;
+	box-sizing: 3px 3px 3px #9de7bf inset;
+	background-color: rgb(255,255,255); 
+	width: 700px;
+	margin-right: 5px;
+	text-align: center;
+	font-size: 1.2em;
+	letter-spacing: 1;
+	font-family: 'Trebuchet MS',serif;
+}
+#gauche h2
+{
+	text-transform: uppercase;
+	font-size: 2em;
+	letter-spacing: 1;
+	color: #9de7bf;
+	text-align: center;
+}
+#apropos #droite
+{
+	width: 400px;
+	background-color: #f7f7f7;
+	text-align: center;
+	border-radius: 5px;
+	padding: 15px;
+	margin-left: 5px;
+}
+#droite h1
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 'Times New Roman',serif;
+	letter-spacing: 1;
+}
+#droite h2
+{
+	background-color: yellow;
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	margin: auto;
+	margin-top: 10px;
+}
+#droite p 
+{
+	text-align: center;
+	font-size: 'Trebuchet MS',serif;
+	font-size: 1.2em;
+}
+#droite strong
+{
+	font-size: 2em;
+	font-style: italic;
+	font-weight: normal;
+}
+#droite .btn
+{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	margin:auto;
+	background-color: #27cf79;
+}
+#droite .btn a
+{
+	color: white;
+	text-decoration: none;
+	font-family: 'Trebuchet MS',serif;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+#apropos #droite hr
+{
+	
+	border-color:#9de7bf;
+	width: 300px;
+	margin: auto;
+}
+/*table*/
+#table
+{
+	margin-top: 50px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#table h1
+{
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 1;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#table table
+{
+	margin: auto;
+	border-collapse: collapse;
+	width: 900px;
+	margin-top: 20px;
+}
+.tofTable
+{
+	width: 150px;
+}
+#table .right
+{
+	border-right: 2px solid white;
+}
+
+#table table th
+{
+	background-color: black;
+	color: #fff;
+
+}
+#table table tr th,#table table tr td
+{
+	border:1px solid black;
+	height: 40px;
+	line-height: 40px;
+}
+{
+	border
+}
+.logoTable
+{
+	width: 15px;
+	height: 10px;
+}
+/*question*/
+#question
+{
+	background-color: #222222;
+	height:500px;
+	text-align: center;
+	color: #fff;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#question h1
+{
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: 'Times New roman',serif;
+}
+#question p
+{
+	font-family: 'Trebuchet MS',serif;
+	font-size: 1.2em;
+	margin-bottom: 50px;
+}
+#question h2
+{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-family: 'Times New roman',serif;
+	width: 90%;
+	margin: auto;
+	text-align:left; 
+}
+#question hr
+{
+	border-bottom: 3px solid #f75100;
+	width: 90%;
+	margin: auto;
+}
+#assuranceClassique,#assuranceEleectrique,#parle
+{
+	width: 90%;
+	margin: auto;
+	height: 30px;
+	border:1px solid black;
+	margin-top: 0px;
+}
+/*nous*/
+#nous
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#nous h1
+{
+	text-transform: uppercase;
+	font-size: 2em;
+
+}
+#element
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.element
+{
+	width: 350px;
+	border:1px solid black;
+	margin:5px;
+	text-align: center;
+	font-size: 1em;
+	font-family: 'Trebuchet MS',serif;
+	padding-bottom: 0px;
+}
+/*devis*/
+#devis
+{
+/*	height: 500px;
+*/	margin-top: 50px;
+	background-color: #222222;
+	margin-bottom: 0px;
+}
+#devis h1
+{
+	font-size: 2em;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+#devis form
+{
+	background:url('images/footer-degrade.jpg') repeat-x bottom;
+	padding-bottom: 25px;
+}
+#devis #groupeFrom
+{
+	text-align: center;
+	margin:auto;
+	display: flex;
+	justify-content: center;
+}
+#formGauche,#formDroite
+{
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+#formGauche input,#formDroite input
+{
+	padding: 5px;
+	margin: 5px;
+	width: 500px;
+	height: 30px;
+	background-color: #222222;
+	border:1px solid #f75100;
+}
+#devis .btn
+{
+	text-align: center;
+	margin-top: 10px;
+	text-align: center;
+}
+#devis .btn input
+{
+	background-color: #f75100;
+	border:3px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1em;
+	width: 200px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+}
+#devis .btn input:hover
+{
+	width: 250px;
+	height: 80px;
+	background-color: rgb(0,151,169);
+	border:3px solid #f75100;
+}
+/*footer*/
+footer 
+{
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 color: #fff;
+}
+footer img
+{
+	color: #fff;
+	background-color: #fff;
+}
+footer a
+{
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Trebuchet MS',serif;
+}

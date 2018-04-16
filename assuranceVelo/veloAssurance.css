@@ -1,0 +1,207 @@
+.btn-custom
+{
+	background-color: white;
+	color: black;
+}
+#navbarNav
+{
+/*	border:1px solid black;
+*/}
+#navbarNav .nav-item
+{
+	margin-right: 50px;
+}
+.nav-item .nav-link
+{
+	text-transform: uppercase;
+	font-family: 'Trebuchet MS',serif;
+}
+/*banniere*/
+.carousel-caption h1
+{
+	border-bottom: 1px solid yellow;
+	text-shadow: 3px 3px 3px rgb(128,128,128);
+}
+.carousel-caption a,.carousel-caption a:hover
+{
+	color: #fff;
+}
+/*section*/
+.section
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+.section h1
+{
+	text-transform: uppercase;
+	font-family: 'Trebuchet MS',serif;
+	text-align: center;
+}
+.section p
+{
+	font-style: italic;
+	font-size: 1.2em;
+	text-align: center;
+}
+.section strong
+{
+	border-bottom: 1px solid yellow;
+}
+/*type*/
+.type
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.classique hr,.electrique hr
+{
+	border-bottom: 3px solid #f75100;
+	width: 150px;
+	margin: auto;	
+}
+.classique p,.electrique p 
+{
+	font-family: 'Trebuhet MS',serif;
+	font-size: 1.3em;
+	text-align: center;
+}
+.classique,.electrique
+{
+	width: 400px;
+	border:3px ridge #F7F7F7;
+	text-align: center;
+	background-color: #F7F7F7;
+	color: #181818;
+	border-radius: 5px;
+}
+.type h2
+{
+	font-family: Impact,serif;
+	font-weight: normal;
+}
+.classique p,.electrique p 
+{
+	font-family: 'Trebuhet MS',serif;
+	font-size: 1.3em;
+	text-align: center;
+}
+/*casse*/
+.casse
+{
+	background-color: #9de7bf;
+	padding: 15px;
+}
+.gauche,.droite
+{
+	border:1px solid black;
+}
+.gauche
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border:1px ridge #9de7bf;
+	box-sizing: 3px 3px 3px #9de7bf inset;
+	background-color: rgb(255,255,255); 
+	width: 700px;
+	height: 300px;
+	align-self: center;
+	text-align: center;
+	font-size: 1.2em;
+	letter-spacing: 1;
+	font-family: 'Trebuchet MS',serif;
+}
+.droite
+{
+	text-align: center;
+	border:1px ridge #9de7bf;
+	box-sizing: 3px 3px 3px #9de7bf inset;
+	background-color: rgb(255,255,255); 
+	width: 700px;
+	text-align: center;
+	font-size: 1.2em;
+	letter-spacing: 1;
+	font-family: 'Trebuchet MS',serif;
+	border-radius: 5px;
+}
+.droite h1
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 'Times New Roman',serif;
+	letter-spacing: 1;
+}
+.droite h2
+{
+	background-color: yellow;
+	width: 400px;
+	height: 40px;
+	line-height: 40px;
+	margin: auto;
+	margin-top: 10px;
+}
+.droite p 
+{
+	text-align: center;
+	font-size: 'Trebuchet MS',serif;
+	font-size: 1.2em;
+}
+.droite strong
+{
+	font-size: 2em;
+	font-style: italic;
+	font-weight: normal;
+}
+/*contact*/
+.contact
+{
+	background-color: #343a40;
+	margin-top: 50px;
+	
+}
+.contact-inner
+{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.contact-inner h1
+{
+	width: 100%;
+	font-family: 'Trebuchet MS',serif;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
+		margin-top: 20px;
+
+
+}
+.contact-inner form
+{
+	width: 100%;
+}
+.contact-inner input
+{
+	margin:5px;
+	background-color: #343a40;
+	border:1px solid yellow;
+}
+
+.tofTable
+{
+	width: 100px;
+}
+.formGauche
+{
+	display: flex;
+	justify-content: center;
+}
