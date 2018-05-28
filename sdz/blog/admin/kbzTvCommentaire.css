@@ -1,0 +1,160 @@
+/*font-family: 'Kaushan Script', cursive;*/
+body
+{
+	font-family: 'Trebuchet MS',serif;
+}
+a,a:hover
+{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+ul
+{
+	list-style-type: none;
+}
+img
+{
+	max-width: 100%;
+}
+/*section kbzTv*/
+#kbzTv
+{
+
+	background:rgb(51,51,51)/* url('images/tn_logo.jpg') no-repeat top right*/;
+	background-size: 6.5em;
+}
+.kbzTvContainer
+{
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.kbzTvContainer h1
+{
+	padding-top: 15px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1.2em;
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	width: 100%;
+	text-shadow: 3px 3px 6px rgb(51,51,51);
+	color: #fff;
+}
+.kbzTvGauche
+{
+	background-color: rgb(51,51,51);
+	padding: 0px;
+}
+.kbzTvGaucheContenu
+{
+	background-color: #fff;
+	margin: 5px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	/*height: 500px;*/
+	/*border:1px solid red;*/
+}
+.kbzTvGaucheContenu h2
+{
+/*	border:1px solid black;
+*/	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-family: 'Trebuchet MS',serif;
+	font-size: 1.2em;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.kbzTvGaucheContenu p 
+{
+	/*border:1px solid black;*/
+	text-align: center;
+	font-weight: normal;
+	font-family: 'Trebuchet MS',Impact,serif;
+	font-size: 1em;
+	margin:0px;
+	margin-bottom: 20px;
+	padding: 0 20px;
+}
+.kbzTvGaucheContenu strong
+{
+	color: red;
+	text-transform: uppercase;
+	font-style: italic;
+	letter-spacing: 1;
+}
+.kbzTvGaucheContenu .petit
+{
+	margin-bottom: 0px;
+	padding: 0px;
+}
+.kbzTvGaucheContenu iframe
+{
+
+}
+.kbzTvGaucheContenu #btnSociaux
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.kbzTvGaucheContenu #btnSociaux .btnSociaux
+{
+	margin: 5px;
+}
+#commentaire
+{
+	padding-bottom: 5px;
+	text-align: center;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.kbzTvDroite
+{
+	background-color: #fff;
+	padding: 0px;
+}
+.kbzTvDroiteContenu
+{
+	/*border:1px solid black;*/
+}
+.kbzTvDroiteContenu h3
+{
+	/*border:1px solid red;*/
+	margin: 0px;
+	text-transform: uppercase;
+	font-family: 'Trebuchet MS',serif;
+	text-align: center;
+	text-shadow: 1px 1px 3px black;
+	font-weight: normal;
+}
+.kbzTvDroiteContenu h6
+{
+	margin-top: 5px;
+	border-bottom:1px solid black;
+	padding-bottom: 3px;
+}
+.kbzTvDroiteContenu h6 mark
+{
+	background-color: red;color: #fff;
+}
+.kbzTvDroiteContenu p
+{
+	text-align: justify; 
+	margin: 10px;
+}
+.kbzTvDroiteContenu a
+{
+	text-decoration: none;
+	color: rgb(51,51,51);
+}
+.kbzTvDroiteContenu a:hover
+{
+	text-decoration: underline;
+	color: rgb(51,51,51);
+}

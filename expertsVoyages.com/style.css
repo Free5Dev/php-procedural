@@ -1,0 +1,253 @@
+body,html
+{
+	padding: 0px;
+	margin: 0px;
+}
+img
+{
+	max-width: 100%;
+}
+hr
+{
+	border-bottom: 1px ridge #007bff;
+	width: 10%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+/*navbar*/
+/*carousel*/
+#carousel
+{
+}
+/*welcom*/
+#welcom
+{
+	text-align: center;
+/*	border:1px solid red;
+*/	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#welcom h1
+{
+/*	border:1px solid black;
+*/	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-family: 'Trebuchet MS',serif;
+	margin: 0px;
+}
+#welcom .p
+{
+	font-size: 1.3em;
+	font-family: 'Trebuchet MS',Serif;
+	font-weight: normal;
+	color: #181818;
+	letter-spacing: 1px;
+}
+#welcom strong a
+{
+	color: red;
+	text-transform: uppercase;
+	font-style: italic;
+	text-decoration: underline;
+	letter-spacing: 1px;
+}
+/*information*/
+#information
+{
+	margin-bottom: 20px;
+}
+#information-inner
+{
+	background:#333333 url('images/conakry.jpg')  fixed no-repeat left center;
+/*	height: 200px;
+*/	background-size: cover;
+}
+#information-contenue
+{
+	background-color: #333333;
+/*	height: 200px;
+*/	text-align: center;
+	color: #fff;
+	font-family: 'Trebuchet MS',serif;
+}
+#information-contenue h2
+{
+	color: yellow;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#information-contenue p
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 1.2em;
+}
+/*services*/
+#nosServices
+{
+	margin-top: 50px;
+}
+#nosServices h1
+{
+/*	width: 100%;
+*/	text-align: center;
+/*	border:3px solid red;
+*/	font-weight: normal;
+	text-transform: uppercase;
+	text-shadow: 3px 3px 6px #181818;
+	margin-bottom:20px;
+/*	border-bottom: 1px ridge #007bff;
+*/}
+#nosServices figure,#nosServices figure figcaption
+{
+	text-align: center;
+}
+/*inscription*/
+#inscription
+{
+	background: #333 url('images/inscription.jpg') fixed no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	margin-top: 20px;
+	/*margin-bottom: 50px;*/
+}
+#inscription .inscriptiongauche
+{
+	
+	/*background:url('images/inscription.jpg') fixed no-repeat center center;*/
+	/*background-size: cover;*/
+/*	border:1px solid red;
+*/}
+#inscription .inscriptiondroite
+{
+	padding: 0px;
+	background-color: #333;
+	color: #181818;
+	border:1px redge #fff;
+	padding-bottom: 5px;
+}
+#inscription .form
+{
+	padding-left: 20px;
+}
+#inscription .inscriptiondroite h2
+{
+	text-align: center;
+}
+/*billet*/
+#billetAvion
+{
+/*	margin-top: 20px;
+*/	margin-bottom: 20px;
+/*	border:1px solid black;
+*/	padding-top: 15px;
+	padding-bottom: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	background-color: #9de7bf;
+}
+.billetDroite
+{
+/*	border: 1px solid red;
+*/	align-self: center;
+	background-color: #fff;
+	padding-bottom: 15px;
+	text-align: center;
+	box-shadow: 3px 3px 6px black;
+}
+.billetDroite h3
+{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Trebuchet MS',serif;
+}
+.billetDroite p,.billetGauche p
+{
+	text-align: center;
+	font-family: 'Trebuchet MS',serif;
+}
+.billetGauche
+{
+/*	border:1px solid maroon;
+*/	background-color:#fff;
+	margin-right: 5px;
+	padding-bottom: 5px;
+	box-shadow: 3px 3px 6px black;
+}
+.billetGauche h1
+{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Trebuchet MS',serif;
+}
+/*temoignages*/
+#temoignage
+{
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#temoignage h1
+{
+	text-align: center;
+	width: 100%;
+/*s*/	text-transform: uppercase;
+	font-family: 'Trebuchet MS',serif;
+	text-shadow: 3px 3px 6px black;
+}
+.temoignageGauche,.temoignageCentre,.temoignageDroite
+{
+	text-align: center;
+	font-family: 'Trebuchet MS',serif;
+}
+/*footer*/
+#contact
+{
+	background-color: #333;
+	color: #fff;
+}
+#contact h1
+{
+	font-size: 1.8em;
+	text-align: center;
+	width: 100%;
+/*s*/	text-transform: uppercase;
+	font-family: 'Trebuchet MS',serif;
+	text-shadow: 3px 3px 6px black;
+	color: #fff;
+	font-weight: normal;
+	padding-top: 20px;
+}
+.contactAdresse
+{
+	/*border:1px solid #fff;*/
+	text-align: center;
+	font-family: 'Trebuchet MS',serif;
+	font-size: 1.2em;
+}
+.contactAdresse figure img
+{
+	width: 30px;
+}
+.copyright
+{
+	background-color: #111;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+.copyright a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.copyright a:hover
+{
+	text-decoration: underline;
+}
