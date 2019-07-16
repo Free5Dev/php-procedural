@@ -12,7 +12,8 @@
 <body>
     <header>
         <h1><a href="index.php">Social</a></h1>
-       
+        <a href="add.php">ADD USER</a>
+        <a href="index.php?logout=ok">Deconnexion</a>
     </header>
 
    
