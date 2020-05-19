@@ -1,0 +1,26 @@
+body{
+    background: url('images/security.jpg') no-repeat center center ;
+
+}
+#main_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+section{
+    /* border: 1px solid #000; */
+}
+section .container{
+    align-self: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+footer p{
+    text-align: center;
+    margin: 5px;
+}
