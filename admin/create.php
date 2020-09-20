@@ -24,7 +24,7 @@
                 $queryInsert->bindParam(':photo', $_FILES['photo']['name']);
                 $queryInsert->bindParam(':famillesID', $_POST['famillesID']);
                 $queryInsert->execute();
-                echo"Success";
+                header("Location:index.php");
             } else {
                 $queryInsert = $bdd->prepare("INSERT INTO articles (reference, prix, description, famillesID) VALUES (:reference, :prix, :description, :famillesID)");
                 $queryInsert->bindParam(':reference', $_POST['reference']);
@@ -32,7 +32,7 @@
                 $queryInsert->bindParam(':description', $_POST['description']);
                 $queryInsert->bindParam(':famillesID', $_POST['famillesID']);
                 $queryInsert->execute();
-                echo"Success not Photos";
+                header("Location:index.php");
             }
         }else{
             echo"The field's empty";
@@ -44,38 +44,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./../style.css">
     <title>Admin | Create</title>
 </head>
 <body>
-    <a href="index.php">Retour</a>
-    <a href="index.php?logout=ok">Deconnexion</a>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
-        <div>
-            <label for="reference">Reference</label>
-            <input type="text" name="reference" id="reference">
+    <header class="bg-success text-white">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1><i class="fas fa-book-reader"></i> ZBOOK</h1>
+            <a href="index.php?logout=ok" class="text-white">Deconnexion</a>
         </div>
-        <div>
-            <label for="prix">Prix</label>
-            <input type="text" name="prix" id="prix">
+    </header>
+    <div class="container m-5">
+        <a href="index.php" class="btn btn-outline-success">Retour</a>
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="reference">Reference</label>
+                <input type="text" name="reference" id="reference" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="prix">Prix</label>
+                <input type="text" name="prix" id="prix" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="photo">Photo</label>
+                <input type="file" name="photo" id="photo" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="famillesID">Famille</label>
+                <select name="famillesID" id="famillesID" class="form-control">
+                    <option value="">Selectionner une famille</option>
+                    <?php while($dataMenu = $queryMenu->fetch()){ ?>
+                        <option value="<?php echo htmlspecialchars($dataMenu['id']); ?>"><?php echo htmlspecialchars($dataMenu['intitule']); ?></option>
+                    <?php } $queryMenu->closeCursor(); ?>
+                </select>
+            </div>
+            <input type="submit" value="Ajouté l'article" class="btn btn-outline-success" name="btnCreate" id="btnCreate">
+        </form>
+    </div>
+    <footer class="bg-success text-white">
+        <div class="container">
+            <p><i class="fas fa-book-reader"></i> Copyright &copy; 2020 Tous droits Réservés</p>
         </div>
-        <div>
-            <label for="description">Description</label>
-            <textarea name="description" id="description" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-            <label for="photo">Photo</label>
-            <input type="file" name="photo" id="photo">
-        </div>
-        <div>
-            <label for="famillesID">Famille</label>
-            <select name="famillesID" id="famillesID">
-                <option value="">Selectionner une famille</option>
-                <?php while($dataMenu = $queryMenu->fetch()){ ?>
-                    <option value="<?php echo htmlspecialchars($dataMenu['id']); ?>"><?php echo htmlspecialchars($dataMenu['intitule']); ?></option>
-                <?php } $queryMenu->closeCursor(); ?>
-            </select>
-        </div>
-        <input type="submit" value="Ajouté l'article" name="btnCreate" id="btnCreate">
-    </form>
+    </footer>
 </body>
 </html>
