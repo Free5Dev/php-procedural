@@ -62,7 +62,7 @@
                 <label for="password">Mots de passe</label>
                 <input type="password" name="password" id="password" placeholder="Mots de passe" class="form-control">
             </div>
-            <input type="submit" value="Connexion" name="btnConnexion" class="btn btn-outline-success" id="btnConnexion">
+            <button type="submit" name="btnConnexion" class="btn btn-outline-success" id="btnConnexion"><i class="fas fa-sign-in-alt"></i>Connexion </button>
         </form>
     </div>
     <footer class="bg-success text-white">

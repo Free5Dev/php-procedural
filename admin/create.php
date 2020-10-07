@@ -57,7 +57,7 @@
         </div>
     </header>
     <div class="container m-5">
-        <a href="index.php" class="btn btn-outline-success">Retour</a>
+        <a href="index.php" class="btn btn-outline-success"><i class="fas fa-backward"></i> Retour</a>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="reference">Reference</label>

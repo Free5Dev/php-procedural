@@ -45,6 +45,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="./../style.css">
     <title>Admin | CRUD</title>
 </head>
@@ -56,7 +58,7 @@
         </div>
     </header>
     <div class="container m-5">
-        <a href="create.php" class="btn btn-outline-success">Ajout Article</a>
+        <a href="create.php" class="btn btn-outline-success"><i class="fas fa-plus-circle"></i> Ajout Article</a>
         <form action="index.php" method="get" class="form-inline">
             <label for="searchArticle">Recherche d'Article</label>
             <input type="text" name="searchArticle" id="searchArticle" placeholder="Recherche..." value="<?php if(isset($_GET['btnSearch'])) echo $_GET['searchArticle'] ?>" class="form-control m-3"> 
@@ -66,7 +68,7 @@
                         <option value="<?php echo htmlspecialchars($dataMenu['id']); ?>"><?php echo htmlspecialchars($dataMenu['intitule']); ?></option>
                     <?php } $queryMenu->closeCursor(); ?>
             </select>
-            <input type="submit" value="Recherche" name="btnSearch" id="btnSearch" class="btn btn-outline-success">
+            <button type="submit"  name="btnSearch" id="btnSearch" class="btn btn-outline-success"><i class="fas fa-search"></i>Recherche </button>
         </form>
         <table class="table table-hover">
             <thead>
@@ -85,9 +87,9 @@
                     <td><?php echo htmlspecialchars($articles['reference']); ?></td>
                     <td><?php echo htmlspecialchars($articles['prix']); ?></td>
                     <td><?php echo htmlspecialchars($articles['description']); ?></td>
-                    <td><a href="describe.php?ref=<?php echo htmlspecialchars($articles['reference']); ?>" class="btn btn-outline-info">Détails</a></td>
-                    <td><a href="update.php?ref=<?php echo htmlspecialchars($articles['reference']); ?>" class="btn btn-outline-warning">Modification</a></td>
-                    <td><a href="index.php?ref=<?php echo htmlspecialchars($articles['reference']); ?>&amp;supp=ok" class="btn btn-outline-danger">Suppression</a></td>
+                    <td><a href="describe.php?ref=<?php echo htmlspecialchars($articles['reference']); ?>" class="btn btn-outline-info"><i class="fas fa-dumbbell"></i> Détails</a></td>
+                    <td><a href="update.php?ref=<?php echo htmlspecialchars($articles['reference']); ?>" class="btn btn-outline-warning"><i class="fas fa-pencil-alt"></i> Modification</a></td>
+                    <td><a href="index.php?ref=<?php echo htmlspecialchars($articles['reference']); ?>&amp;supp=ok" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i> Suppression</a></td>
                 </tr>
                 <?php } $queryArticles->closeCursor(); ?>
             </tbody>
